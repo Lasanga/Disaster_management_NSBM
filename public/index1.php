@@ -15,7 +15,9 @@
 
     <!-- custom CSS -->
     <link rel="stylesheet" href="css-2/custom/header.css">
+    <link rel="stylesheet" href="css-2/custom/button.css">
     <link rel="stylesheet" href="css-2/custom/footer.css">
+    <link rel="stylesheet" href="css-2/custom/modal.css">
 
   </head>
   <body>
@@ -45,7 +47,9 @@
                 <a class="nav-link" href="#footer">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.php">Login</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login_form">
+                  <div class="nav-link"> Login</div>
+                </button>
               </li>
             </ul>
           </div>
@@ -72,6 +76,44 @@
 
       <br />
 
+      <div class="container">
+      <!-- Modal -->
+        <div class="modal fade" id="login_form" tabindex="-1" role="dialog" aria-labelledby="LoginFormTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="LoginFormTitle">Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- Login form for users and admin -->
+                <form action="" method="POST">
+                  <div class="form-group">
+                    <label for="username">Username </label>
+                    <input type="text" name="username" required class="form-control" id="username"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password </label>
+                    <input type="password" name="password" required class="form-control" id="password"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="remember">Remember me</label>
+                    <input type="checkbox" name="check" id="remember">
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" name="submit" value="Login" class="btn btn-primary form-control">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <footer class ="py-4 bg-dark" id="footer">
         <div class="container">
