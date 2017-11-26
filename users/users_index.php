@@ -12,13 +12,14 @@
   <title>Save city</title>
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="../public/css-2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
 
   <!-- custom CSS -->
-  <link rel="stylesheet" href="../public/css-2/custom/footer.css">
-  <link rel="stylesheet" href="../public/css-2/custom/modal.css">
-  <link rel="stylesheet" href="../public/css-2/custom/user_header.css">
-  <link rel="stylesheet" href="../public/css-2/custom/body.css">
+  <link rel="stylesheet" href="../css/custom-css/header.css">
+  <link rel="stylesheet" href="../css/custom-css/button.css">
+  <link rel="stylesheet" href="../css/custom-css/footer.css">
+  <link rel="stylesheet" href="../css/custom-css/modal.css">
+  <link rel="stylesheet" href="../css/custom-css/body.css">
 
   <!-- Map size -->
   <style>#map{height: 500px;width: 100%;}</style>
@@ -42,7 +43,7 @@
             <a class="nav-link" href="users_index.php">Dashboard</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="services.php">Alerts<span class="badge badge-pill badge-danger">1</span></a>
+            <a class="nav-link" href="#alerts">Alerts<span class="badge badge-pill badge-danger">1</span></a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="../public/index1.php">Logout</a>
@@ -85,21 +86,64 @@
           </div>
         </div>
       </div>
-           <div class="col-lg-4 col-sm-4">
-          <div class="card">
-          <div class="card-header">
-            <h4>Alerts <span class="badge badge-pill badge-danger">5</h4></span>
-          </div>
-          <div class="card-block">
-            
+
+      <!-- show alerts -->
+      <div class="col-lg-4 col-sm-4">
+        <div id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="card" id="alerts">
+            <div class="card-header">
+              <h4>Alerts <span class="badge badge-pill badge-danger">1</h4></span>
+            </div>
+            <div class="card-block"> 
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a data-toggle="collapse" data-parent="#accordion" href="#messages" aria-expanded="true" aria-controls="messages">
+                  Messages
+                </a></li>
+                <div id="messages" class="collapse show" role="tabpanel">
+                  <div class="card-block">
+
+                  </div>
+                </div>
+                <li class="list-group-item"><a data-toggle="collapse" data-parent="#accordion" href="#notifications" aria-expanded="true" aria-controls="notifications">
+                  Notification
+                </a></li>
+              </ul>
+            </div>
+            <div id="notifications" class="collapse show" role="tabpanel">
+              <div class="card-block">
+
+              </div>
+            </div>
           </div>
         </div>
-        </div>
+      </div>
     </div>
   </div>
 
-  <!-- show alerts -->
- 
+  <!-- data tables -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-6">
+        <table class="table table-bordered table-hover table-striped">
+          <tr>
+            <th>Headline</th>
+            <th>Description</th>
+            <th>Location</th>
+            <th>Images</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>sample head</td>
+            <td>sample head</td>
+            <td>sample head</td>
+            <td>sample head</td>
+            <td><button class="btn btn-primary" data-toggle="modal" data-target="edit">Edit</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
 
   <!-- footer -->
   <footer class ="py-4 bg-dark" id="footer">
@@ -124,6 +168,16 @@
                 </li>
               </ul>
             </td>
+            <td>
+              <ul>
+                <li><form action="" method="POST" class="form-group">
+                  <textarea class="form-control" placeholder="feedback"></textarea>
+                  <br>
+                  <input type="submit" name="feedbackSubmit" value="submit" class="btn btn-default">
+                </form>
+                </li>
+              </ul>
+            </td>
           </table>
         </div>
       </div>
@@ -134,16 +188,16 @@
   </footer>
 
   <!-- jQuery first, then Tether, then Bootstrap JS. -->
-  <script src="js-2/jQuery/jquery-3.2.1.min.js"></script>
+  <script src="../js/jQuery/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 
   <!-- bootstrap core js -->
-  <script src="js-2/js/bootstrap.min.js"></script>
-  <script src="js-2/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/js/bootstrap.min.js"></script>
+  <script src="../js/js/bootstrap.bundle.min.js"></script>
 
   <!-- custom javascripts -->
-  <script src="js-2/custom/java.js"></script>
-  <script src="js-2/custom/map.js"></script>
+  <script src="../js/custom-js/java.js"></script>
+  <script src="../js/custom-js/map.js"></script>
 
 </body>
 </html>

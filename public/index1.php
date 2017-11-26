@@ -11,14 +11,14 @@
   <title>Save city</title>
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css-2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
 
   <!-- custom CSS -->
-  <link rel="stylesheet" href="css-2/custom/header.css">
-  <link rel="stylesheet" href="css-2/custom/button.css">
-  <link rel="stylesheet" href="css-2/custom/footer.css">
-  <link rel="stylesheet" href="css-2/custom/modal.css">
-  <link rel="stylesheet" href="css-2/custom/body.css">
+  <link rel="stylesheet" href="../css/custom-css/header.css">
+  <link rel="stylesheet" href="../css/custom-css/button.css">
+  <link rel="stylesheet" href="../css/custom-css/footer.css">
+  <link rel="stylesheet" href="../css/custom-css/modal.css">
+  <link rel="stylesheet" href="../css/custom-css/body.css">
 
   <!-- Map size -->
   <style>#map{height: 500px;width: 100%;}</style>
@@ -244,26 +244,36 @@
               </li>
             </ul>
           </td>
-        </table>
-      </div>
+          <td>
+            <ul>
+              <li><form action="" method="POST" class="form-group">
+                <textarea class="form-control" placeholder="feedback"></textarea>
+                <br>
+                <input type="submit" name="feedbackSubmit" value="submit" class="btn btn-default">
+              </form>
+            </li>
+          </ul>
+        </td>
+      </table>
     </div>
-    <p class="mbr-text mb-0 mbr-fonts-style mbr-white display-7">
-      © Copyright 2017 Disaster Managment Department - All Rights Reserved
-    </p>
   </div>
+  <p class="mbr-text mb-0 mbr-fonts-style mbr-white display-7">
+    © Copyright 2017 Disaster Managment Department - All Rights Reserved
+  </p>
+</div>
 </footer>
 
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
-<script src="js-2/jQuery/jquery-3.2.1.min.js"></script>
+<script src="../js/jQuery/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 
 <!-- bootstrap core js -->
-<script src="js-2/js/bootstrap.min.js"></script>
-<script src="js-2/js/bootstrap.bundle.min.js"></script>
+<script src="../js/js/bootstrap.min.js"></script>
+<script src="../js/js/bootstrap.bundle.min.js"></script>
 
 <!-- custom javascripts -->
-<script src="js-2/custom/java.js"></script>
-<script src="js-2/custom/map.js"></script>
+<script src="../js/custom-js/java.js"></script>
+<script src="../js/custom-js/map.js"></script>
 
 <!-- Google map javascript api -->
 <script async defer
