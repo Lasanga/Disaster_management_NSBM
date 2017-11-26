@@ -127,7 +127,7 @@
       </div>
     </div>
     <div class=" py-4 embed-responsive">
-      <div id="map" >
+      <div id="map" class="rounded" >
       </div>
     </div> 
   </div>
@@ -149,7 +149,8 @@
             Sample NEWS Heading
           </div>
           <div class="card-block">
-            <img class="rounded img-fluid" src="images/fire.jpeg" width="200px" height="150px" style="margin-top:10px; margin-bottom:10px;"/>
+            <img class="rounded card-img" src="images/fire.jpeg" style="margin-top:10px; margin-bottom:10px;"/>
+            <br>
             <br>
             <p>details</p>
           </div>
@@ -160,161 +161,113 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-4">
-        <div class="card">
-          <div class="card-header">
-            sfsfs
-          </div>
-          <div class="card-block">
-            dadada
-          </div>
-          <div class="card-footer">
-            sf
-          </div>
-        </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="news1" tabindex="-1" role="dialog" aria-labelledby="newsTitle" aria-hidden=" true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newsTitle">Sample News Heading</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      <div class="col-md-4 col-sm-4">
-        <div class="card">
-          <div class="card-header">
-            sfsfs
-          </div>
-          <div class="card-block">
-            dadada
-          </div>
-          <div class="card-footer">
-            sf
-          </div>
-        </div>
+      <div class="modal-body" data-target="#ne">
+        <p>
+          Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="modal fade" id="news1" tabindex="-1" role="dialog" aria-labelledby="newsTitle" aria-hidden=" true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="newsTitle">Sample News Heading</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+<!-- old story cards -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h2 class="py-5 " >
+        Old Stories
+      </h2>
+    </div>
+  </div>
+
+  <!-- old stories -->
+  <div class="row">
+    <div class="col-md-4 col-sm-4">
+      <div class="card">
+        <div class="card-header">
+          Sample NEWS Heading
+        </div>
+        <div class="card-block">
+          <img class="rounded card-img" src="images/fire.jpeg" style="margin-top:10px; margin-bottom:10px;"/>
+          <br>
+          <p>details</p>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary" data-toggle="modal" data-target="#news1">
+            Read more
           </button>
         </div>
-        <div class="modal-body" data-target="#ne">
-          <p>
-            Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
       </div>
     </div>
-  </div>
 
-  <!-- old story cards -->
+    
+  </div>
+</div>
+</div>
+
+<!-- footer -->
+<footer class ="py-4 bg-dark" id="footer">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h2 class="py-5 " >
-          Old Stories
-        </h2>
+    <div class="menu-items">
+      <div class="table-responsive">
+        <table class="table">
+          <td>
+            <ul>
+              <li>contact us:<dl><dt>011-2-566444</dt><dt>011-5-887-997</dt> <dt>0778-98-45-666</dt></dl></li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>email:<dl><dt>SampleDisasterManagment@gmail.com</dt></dl>
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Fax:<dl><dt>+00976654321</dt></dl>
+              </li>
+            </ul>
+          </td>
+        </table>
       </div>
     </div>
-
-    <!-- latest story cards -->
-    <div class="row">
-      <div class="col-md-4 col-sm-4">
-        <div class="card">
-          <div class="card-header">
-            Sample NEWS Heading
-          </div>
-          <div class="card-block">
-            <img src="" width="200px" height="150px" style="margin-top:10px; margin-bottom:10px;"/>
-            <br>
-            <p>details</p>
-          </div>
-          <div class="card-footer">
-            <button class="btn btn-primary" data-toggle="modal" data-target="#news1">
-              Read more
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-4">
-        <div class="card">
-          <div class="card-header">
-            sfsfs
-          </div>
-          <div class="card-block">
-            dadada
-          </div>
-          <div class="card-footer">
-            sf
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-4">
-        <div class="card">
-          <div class="card-header">
-            sfsfs
-          </div>
-          <div class="card-block">
-            dadada
-          </div>
-          <div class="card-footer">
-            sf
-          </div>
-        </div>
-      </div>
-    </div>
+    <p class="mbr-text mb-0 mbr-fonts-style mbr-white display-7">
+      © Copyright 2017 Disaster Managment Department - All Rights Reserved
+    </p>
   </div>
+</footer>
 
-  <!-- footer -->
-  <footer class ="py-4 bg-dark" id="footer">
-    <div class="container">
-      <div class="menu-items">
-        <div class="table-responsive">
-          <table class="table">
-            <td>
-              <ul>
-                <li>contact us:<dl><dt>011-2-566444</dt><dt>011-5-887-997</dt> <dt>0778-98-45-666</dt></dl></li>
-              </ul>
-            </td>
-            <td>
-              <ul>
-                <li>email:<dl><dt>SampleDisasterManagment@gmail.com</dt></dl>
-                </li>
-              </ul>
-            </td>
-            <td>
-              <ul>
-                <li>Fax:<dl><dt>+00976654321</dt></dl>
-                </li>
-              </ul>
-            </td>
-          </table>
-        </div>
-      </div>
-      <p class="mbr-text mb-0 mbr-fonts-style mbr-white display-7">
-        © Copyright 2017 Disaster Managment Centre - All Rights Reserved
-      </p>
-    </div>
-  </footer>
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="js-2/jQuery/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 
-  <!-- jQuery first, then Tether, then Bootstrap JS. -->
-  <script src="js-2/jQuery/jquery-3.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<!-- bootstrap core js -->
+<script src="js-2/js/bootstrap.min.js"></script>
+<script src="js-2/js/bootstrap.bundle.min.js"></script>
 
-  <!-- bootstrap core js -->
-  <script src="js-2/js/bootstrap.min.js"></script>
-  <script src="js-2/js/bootstrap.bundle.min.js"></script>
+<!-- custom javascripts -->
+<script src="js-2/custom/java.js"></script>
+<script src="js-2/custom/map.js"></script>
 
-  <!-- custom javascripts -->
-  <script src="js-2/custom/java.js"></script>
-  <script src="js-2/custom/map.js"></script>
-
-  <!-- Google map javascript api -->
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN7im7x2eGnb3NXg6aG8eQUvpP7OKgBxA&callback=initMap"> 
+<!-- Google map javascript api -->
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN7im7x2eGnb3NXg6aG8eQUvpP7OKgBxA&callback=initMap"> 
 </script>
 
 </body>
