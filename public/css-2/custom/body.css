@@ -1,0 +1,51 @@
+.py-1 {
+  padding-bottom: 0.25rem !important;
+}
+.py-5 {
+  padding-top: 10px !important;
+  padding-bottom: 15px !important;
+  border-bottom-style: solid;
+  border-bottom-color: #2e2e1f;
+  border-bottom-width: 3px;
+  margin-bottom: 0px;
+}
+h2{
+  letter-spacing: 1px;
+  color: #2e2e1f;	 
+}
+.col-md-4
+ {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: #343a40;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  color: #fff;
+  letter-spacing: 1px;
+}
+.card-footer {
+  padding: 0.55rem 1.25rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}

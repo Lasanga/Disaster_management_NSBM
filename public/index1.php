@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="css-2/custom/button.css">
   <link rel="stylesheet" href="css-2/custom/footer.css">
   <link rel="stylesheet" href="css-2/custom/modal.css">
-  <link rel="stylesheet" href="css-2/custom/py.css">
+  <link rel="stylesheet" href="css-2/custom/body.css">
 
   <!-- Map size -->
   <style>#map{height: 500px;width: 100%;}</style>
@@ -120,15 +120,152 @@
 
   <div class="container">
     <div class="row">
-      <div class=" py-1 col-sm-1" style="background-color:grey; margin-top: 10px;"></div>
+      <div class="col-lg-12">
+        <h2 class="py-5" >
+          Map
+        </h2>
+      </div>
     </div>
-    <h2 class="py-5 " >
-      Map
-    </h2>
     <div class=" py-4 embed-responsive">
       <div id="map" >
       </div>
     </div> 
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="py-5 " >
+          Latest news
+        </h2>
+      </div>
+    </div>
+
+    <!-- latest story cards -->
+    <div class="row">
+      <div class="col-md-4 col-sm-4">
+        <div class="card">
+          <div class="card-header">
+            Sample NEWS Heading
+          </div>
+          <div class="card-block">
+            <img class="rounded img-fluid" src="images/fire.jpeg" width="200px" height="150px" style="margin-top:10px; margin-bottom:10px;"/>
+            <br>
+            <p>details</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary" data-toggle="modal" data-target="#news1">
+              Read more
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="card">
+          <div class="card-header">
+            sfsfs
+          </div>
+          <div class="card-block">
+            dadada
+          </div>
+          <div class="card-footer">
+            sf
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="card">
+          <div class="card-header">
+            sfsfs
+          </div>
+          <div class="card-block">
+            dadada
+          </div>
+          <div class="card-footer">
+            sf
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="news1" tabindex="-1" role="dialog" aria-labelledby="newsTitle" aria-hidden=" true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="newsTitle">Sample News Heading</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" data-target="#ne">
+          <p>
+            Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.Community participation in rescue and relief operations and reconstruction after a disaster is always essential.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- old story cards -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="py-5 " >
+          Old Stories
+        </h2>
+      </div>
+    </div>
+
+    <!-- latest story cards -->
+    <div class="row">
+      <div class="col-md-4 col-sm-4">
+        <div class="card">
+          <div class="card-header">
+            Sample NEWS Heading
+          </div>
+          <div class="card-block">
+            <img src="" width="200px" height="150px" style="margin-top:10px; margin-bottom:10px;"/>
+            <br>
+            <p>details</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary" data-toggle="modal" data-target="#news1">
+              Read more
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="card">
+          <div class="card-header">
+            sfsfs
+          </div>
+          <div class="card-block">
+            dadada
+          </div>
+          <div class="card-footer">
+            sf
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="card">
+          <div class="card-header">
+            sfsfs
+          </div>
+          <div class="card-block">
+            dadada
+          </div>
+          <div class="card-footer">
+            sf
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- footer -->
@@ -178,7 +315,7 @@
   <!-- Google map javascript api -->
   <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN7im7x2eGnb3NXg6aG8eQUvpP7OKgBxA&callback=initMap"> 
-  </script>
+</script>
 
 </body>
 </html>
