@@ -8,6 +8,7 @@ require_once 'config.php';
 * define a query function to execute the query
 * function to test the query
 * function to escape strings
+* function to hash passwords by using crypt_blowfish algorithm
 */
 class MySqlDatabase
 {
@@ -57,6 +58,12 @@ class MySqlDatabase
 	{
 		$escaped = mysqli_real_escape_string($this->connection,$string);
 		return $escaped;
+	}
+
+	public function hash_password($pass)
+	{
+		$hashed = password_hash($pass, CRYPT_BLOWFISH, array('cost'=>10));
+		return $hashed;
 	}
 }
 

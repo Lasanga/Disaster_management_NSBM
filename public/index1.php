@@ -149,7 +149,7 @@
             Sample NEWS Heading
           </div>
           <div class="card-block">
-            <img class="rounded card-img" src="images/fire.jpeg" style="margin-top:10px; margin-bottom:10px;"/>
+            <img class="rounded card-img" src="images/fire.jpeg" alt="image" style="margin-top:10px; margin-bottom:10px;"/>
             <br>
             <br>
             <p>details</p>
