@@ -92,7 +92,7 @@
           </div>
           <div class="modal-body">
             <!-- Login form for users and admin -->
-            <form action="" method="POST">
+            <form action="login.php" method="POST">
               <div class="form-group">
                 <label for="username">Username </label>
                 <input type="text" name="username" required class="form-control" id="username"/>
@@ -273,7 +273,7 @@
 
 <!-- custom javascripts -->
 <script src="../js/custom-js/java.js"></script>
-<script src="../js/custom-js/map.js"></script>
+<script src="../js/custom-js/public_map.js"></script>
 
 <!-- Google map javascript api -->
 <script async defer

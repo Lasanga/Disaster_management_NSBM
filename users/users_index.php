@@ -56,20 +56,39 @@
   <!-- header starts -->
   <header class="py-4 bg-image-full" style="background-color:#67747e;">
     <div class="container">
-      <h1>Daily Updates Insertion</h1>
+      <h1>Daily Updates Manipulation</h1>
     </div>
   </header>
   
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="py-5" >
+          Map
+        </h2>
+      </div>
+    </div>
+    <div class=" py-4 embed-responsive">
+      <div id="map" class="rounded" >
+      </div>
+    </div> 
+  </div>
+
   <!-- add news form -->
   <div class="container">
     <div class="row">
+      <div class="col-lg-12">
+        <h2 class="py-5" >
+          Update details
+        </h2>
+      </div>
       <div class="col-lg-8 col-sm-8">
         <div class="card">
           <div class="card-header">
             <h4>Add News</h4>
           </div>
           <div class="card-block">
-            <form action="" method="POST" class="form-group">
+            <form action="user_news.php" method="POST" class="form-group">
               <strong><label for="authorName">Author</label></strong>
               <input type="text" name="autho" class="form-control" id="authorName" required>
               <strong><label for="head">Headline</label></strong>
@@ -137,7 +156,7 @@
             <td>sample head</td>
             <td>sample head</td>
             <td>sample head</td>
-            <td><button class="btn btn-primary" data-toggle="modal" data-target="edit">Edit</button></td>
+            <td><button class="btn btn-md btn-danger" data-toggle="modal" data-target="edit">Edit</button></td>
           </tr>
         </table>
       </div>
@@ -175,29 +194,34 @@
                   <br>
                   <input type="submit" name="feedbackSubmit" value="submit" class="btn btn-default">
                 </form>
-                </li>
-              </ul>
-            </td>
-          </table>
-        </div>
+              </li>
+            </ul>
+          </td>
+        </table>
       </div>
-      <p class="mbr-text mb-0 mbr-fonts-style mbr-white display-7">
-        © Copyright 2017 Disaster Managment Department - All Rights Reserved
-      </p>
     </div>
-  </footer>
+    <p class="mbr-text mb-0 mbr-fonts-style mbr-white display-7">
+      © Copyright 2017 Disaster Managment Department - All Rights Reserved
+    </p>
+  </div>
+</footer>
 
-  <!-- jQuery first, then Tether, then Bootstrap JS. -->
-  <script src="../js/jQuery/jquery-3.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="../js/jQuery/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 
-  <!-- bootstrap core js -->
-  <script src="../js/js/bootstrap.min.js"></script>
-  <script src="../js/js/bootstrap.bundle.min.js"></script>
+<!-- bootstrap core js -->
+<script src="../js/js/bootstrap.min.js"></script>
+<script src="../js/js/bootstrap.bundle.min.js"></script>
 
-  <!-- custom javascripts -->
-  <script src="../js/custom-js/java.js"></script>
-  <script src="../js/custom-js/map.js"></script>
+<!-- custom javascripts -->
+<script src="../js/custom-js/java.js"></script>
+<script src="../js/custom-js/map.js"></script>
+
+<!-- Google map javascript api -->
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN7im7x2eGnb3NXg6aG8eQUvpP7OKgBxA&callback=initMap"> 
+</script>
 
 </body>
 </html>

@@ -39,14 +39,11 @@
           <li class="nav-item ">
             <a class="nav-link" href="../public/index1.php">Home</a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item active">
             <a class="nav-link" href="profiles.php" >Profiles</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="admin_index.php">Dashboard</a>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="#alerts">Alerts<span class="badge badge-pill badge-danger">1</span></a>
+            <a class="nav-link" href="admin_index.php">Dashboard</a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="../public/index1.php">Logout</a>
@@ -59,105 +56,74 @@
   <!-- header starts -->
   <header class="py-4 bg-image-full" style="background-color:#67747e;">
     <div class="container">
-      <h1>Daily Updates Manipulation</h1>
+      <h1>Profile Control Panel</h1>
     </div>
   </header>
-  
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h2 class="py-5" >
-        Configure Map
-        </h2>
-      </div>
-    </div>
-    <div class=" py-4 embed-responsive">
-      <div id="map" class="rounded" >
-      </div>
-    </div> 
-  </div>
-  <!-- data tables -->
-  <div class="container">
-    <div class="row">
-       <div class="col-lg-12">
-        <h2 class="py-5" >
-          
-        </h2>
-      </div>
-      <div class="col-lg-12 col-md-6">
-        <table class="table table-bordered table-hover table-striped" style="margin-top: 30px;">
-          <tr>
-            <th>Headline</th>
-            <th>Description</th>
-            <th>Location</th>
-            <th>Images</th>
-            <th>Options</th>
-          </tr>
-          <tr>
-            <td>sample head</td>
-            <td>sample head</td>
-            <td>sample head</td>
-            <td>sample head</td>
-            <td><button class="btn btn-md btn-danger" data-toggle="modal" data-target="edit">Edit</button>
-                <button class="btn btn-md btn-success" data-toggle="modal" data-target="edit">Approve</button>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
 
   <!-- add news form -->
   <div class="container">
     <div class="row">
-      <div class="col-lg-7 col-sm-7">
-        <div class="card">
-          <div class="card-header">
-            <h4>Send Message</h4>
-          </div>
-          <div class="card-block">
-            <form action="message.php" method="POST" class="form-group">
-              <strong><label for="Sender">Sender</label></strong>
-              <input type="text" name="sender" class="form-control" id="Sender" required>
-              <strong><label for="Receiver">Receiver</label></strong>
-              <input type="text" name="receiver" class="form-control" id="Receiver" required>
-              <strong><label for="Message">Message</label></strong>
-              <textarea class="form-control" name="message" id="Message" required=""></textarea> 
-              <small>Add Images(if any)</small>
-              <input type="file" class="form-control-file" id="exampleInputFile">
-              <br>
-              <input type="submit" name="submitDetails" class="form-control btn btn-success" value="Send">
-            </form>
-          </div>
-        </div>
-      </div>
-
       <!-- show alerts -->
       <div class="col-lg-5 col-sm-5">
         <div id="accordion" role="tablist" aria-multiselectable="true">
-          <div class="card" id="alerts">
+          <div class="card">
             <div class="card-header">
-              <h4>Alerts <span class="badge badge-pill badge-danger">1</h4></span>
+              <h4>Profiles </h4></span>
             </div>
             <div class="card-block"> 
               <ul class="list-group list-group-flush">
                 <li class="list-group-item"><a data-toggle="collapse" data-parent="#accordion" href="#messages" aria-expanded="true" aria-controls="messages">
-                  Messages
-                </a></li>
-                <div id="messages" class="collapse show" role="tabpanel">
-                  <div class="card-block">
-                  </div>
-                </div>
-                <li class="list-group-item"><a data-toggle="collapse" data-parent="#accordion" href="#notifications" aria-expanded="true" aria-controls="notifications">
-                  Notification
+                  Profile Name <span><button class="btn btn-danger">Edit</button></span>
                 </a></li>
               </ul>
             </div>
-            <div id="notifications" class="collapse show" role="tabpanel">
+            <div id="messages" class="collapse show" role="tabpanel">
               <div class="card-block">
 
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 col-sm-7">
+        <div class="card">
+          <div class="card-header">
+            <h4>Add profile</h4>
+          </div>
+          <div class="card-block">
+            <form action="registration.php" method="POST" class="form-group">
+
+              <strong><label for="First_name">First name</label></strong>
+              <input type="text" name="firstname" class="form-control" id="First_Name" required>
+
+              <strong><label for="Last_name">Last name</label></strong>
+              <input type="text" name="lastname" class="form-control" id="Last_name" required>
+
+              <strong><label for="Username">Username</label></strong>
+              <input type="text" class="form-control" name="username" id="Username" required> 
+
+              <strong><label for="Username">Type</label></strong>
+              <select name="type" class="form-control" required>
+                <option>Police Station</option>
+                <option>Grama Niladari</option>
+                <option>Post Office</option>
+                <option>Member</option>
+              </select>
+
+              <strong><label for="Email">Email</label></strong>
+              <input type="email" class="form-control" name="email" id="Email" required placeholder="valid email address">
+
+              <strong><label for="password1">Password</label></strong>
+              <input type="password" class="form-control" name="password" id="password1" required placeholder="must include 6-8 characters"> 
+
+              <strong><label for="password2">Re-enter password</label></strong>
+              <input type="password" class="form-control" name="re_password" id="password2" required placeholder="both passwords should be same">  
+              <br>
+              <input type="submit" name="submitDetails" class="form-control btn btn-success" value="Add Profile">
+            </form>
+          </div>
+          <div class="card-footer">
+            <p style="text-align: center;">Copyrights@AdminPanel</p>
           </div>
         </div>
       </div>
